@@ -1,0 +1,29 @@
+{
+    "articole": [
+        {
+            "titlu": "Mai poate stratul de ozon al Pamantului sa se regenereze? Oamenii de stiinta au raspunsul, insa...",
+            "imagine": "images/Pamantul.png",
+            "id": "fa406f22-cc28-4622-89e0-abc3bcdb364a"
+        },
+        {
+            "titlu": "NASA a realizat o colectie noua de fotografii ale Sistemului Solar! Fotografia numarul 7 te va uimi!",
+            "imagine": "images/Sistemul_Solar.png",
+            "id": "890bdd65-b86e-44b9-8529-bef72828ac9a"
+        },
+        {
+            "titlu": "Misterioasa Planeta X nu este doar un mit? Vestea socanta, conform celor mai recente studii...",
+            "imagine": "images/Planeta_X.png",
+            "id": "9960dd6c-6b8a-4046-9cd7-8e09a96b65e2"
+        },
+        {
+            "titlu": "Inaugararea noului telescop romanesc tocmai a avut loc! Cat a costat acest proiect monumental?",
+            "imagine": "images/Telescop_Art.png",
+            "id": "e93af12a-815a-4d16-b1fa-e3707bb47ffe"
+        },
+        {
+            "titlu": "Prima imagine a unei gauri negre ne-a indus in eroare? Ce greseala a trecut cu vederea NASA...",
+            "imagine": "images/Blackhole.png",
+            "id": "47b29c5d-a51d-4eff-89e3-b4e856a01035"
+        }
+    ]
+}

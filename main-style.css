@@ -1,0 +1,360 @@
+.text {
+    font-family: 'Cabin';
+}
+
+#logo {
+    font-family: 'Russo One';
+    font-weight: 400;
+    font-size: 50px;
+    text-transform: uppercase;
+    text-shadow: 4px 4px rgba(60, 50, 180, 0.8);
+    box-sizing: border-box;
+}
+
+#logo-img {
+    width: 60px;
+    height: 60px;
+    object-fit: cover;
+    margin-right: 10px;
+}
+
+body {
+    background: url("images/Background.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.pagina {
+    margin: 15px;
+    
+    display: grid;
+    grid-template-columns: 1fr 50% 1fr;
+    grid-template-rows: auto 80% 1fr;
+    grid-template-areas:
+        "cuprins  titlu     altele"
+        "cuprins  continut  altele"
+        "footer   continut  .";
+}
+
+.pagina .text {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    width: fit-content;
+    box-sizing: border-box;
+    border-radius: 15px;
+
+    color: rgb(255, 255, 215);
+    padding: 15px;
+    background: rgba(0, 20, 80, 0.6);
+    box-shadow: 0px 6px rgba(30, 0, 60, 0.8);
+}
+
+.cuprins, .titlu, .altele {
+    padding: 30px;
+    border-radius: 10px;
+    background: rgba(100, 100, 200, 0.2);
+    width: fit-content;
+    height: fit-content;
+}
+
+
+.continut :nth-of-type(2n) {
+    background: rgba(0, 20, 80, 0.6);
+
+    text-indent: 20px;
+    font-size: 20px;
+}
+
+.continut :nth-of-type(2n+1) {
+    background: rgba(0, 80, 120, 0.6);
+
+    font-size: 30px;
+}
+
+.cuprins {
+    grid-area: cuprins;
+    margin: 30px 0 0 15px;
+}
+
+.titlu {
+    grid-area: titlu;
+    justify-self: center;
+}
+
+.continut {
+    grid-area: continut;
+    margin: 0 30px 0 30px;
+}
+
+.altele {
+    grid-area: altele;
+    margin: 30px 15px;
+
+    justify-self: flex-end;
+}
+
+.footer {
+    grid-area: footer;
+
+    margin-top: 30px;
+    justify-self: flex-start;
+    align-self: flex-end;
+
+    font-size: 14px;
+    color: white;
+    text-shadow: 2px 2px black;
+}   
+
+.pagina-principala {
+    margin-top: 5px;
+    font-size: 30px;
+}
+
+#profilul-meu {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.text-eu-1 {
+    margin-top: 5px;
+    margin-left: 10px;
+    color: white;
+    font-style: italic;
+}
+.text-eu-2 {
+    margin: 7px 45px -5px -110px;
+    color: gray;
+    font-size: 14px;
+}
+
+.lista {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+    text-align: left;
+    
+    box-sizing: border-box;
+    background: rgba(43, 75, 172, 0.3);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-top: 5px;
+
+    font-family: Cabin;
+    color: rgb(255, 255, 215);
+}
+
+.lista-sub {
+    background: rgba(0, 60, 90, 0.3);
+    padding: 10px 0;
+    margin-left: 4px;
+    border-bottom: 3px solid rgba(150, 100, 200, 0.2);
+}
+
+.lista-sub-start {
+    padding: 10px 0;
+    margin-left: 4px;
+    margin-right: 10px;
+}
+
+.icon-socials {
+    width: 24px;
+    height: 24px;
+    object-fit: cover;
+    margin-bottom: -7px;
+    margin-left: -33px;
+    margin-right: 10px;
+}
+
+.capitole-top {
+    margin-top: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    width: fit-content;
+    box-sizing: border-box;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+
+    color: rgb(255, 255, 215);
+    padding: 10px;
+    background: rgba(0, 20, 80, 0.6);
+
+    font-size: 18px;
+    text-decoration: underline;
+}
+
+.capitole {
+    list-style: upper-roman;
+    box-sizing: border-box;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    border-top-right-radius: 15px;
+
+    color: rgb(255, 255, 215);
+    padding: 15px;
+    background: rgba(0, 20, 80, 0.6);
+    box-shadow: 0px 6px rgba(30, 0, 60, 0.8);
+
+    margin-top: -18px;
+    padding-left: 40px;
+}
+
+.capitole-sub {
+    line-height: 2em;
+}
+
+.art-img {
+    width: 96px;
+    height: 96px;
+    object-fit: cover;
+    margin-right: 15px;
+}
+
+a:link {
+    color: rgb(150, 150, 255);
+}
+
+a:visited {
+    color: rgb(100, 90, 180);
+}
+
+.text-alte {
+    font-size: 30px;
+    margin-top: 0px;
+}
+
+.sursa {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    width: fit-content;
+    box-sizing: border-box;
+    border-radius: 50px;
+
+    color: rgb(255, 255, 215);
+    padding: 15px;
+    background: rgba(0, 10, 30, 0.6);
+    box-shadow: 0px 6px rgba(0, 0, 20, 0.8);
+
+    font-size: 10px;
+}
+
+
+#adminPanel
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+
+    background: rgba(0, 60, 140, 0.6);
+}
+
+#adminPanel input
+{
+    background-color:rgba(0, 20, 80, 0.6);
+    color: white;
+}
+
+#butonAutentificare, #butonEnterDate, #butonDeautentificare
+{
+    width: 100%;
+    background-color: rgba(0, 150, 190, 0.6);
+    border-radius: 10px;
+    border:rgba(0, 200, 240, 0.6) solid 3px;
+    color: white;
+    font-weight: bold;
+}
+
+#butonAutentificare:hover, #butonEnterDate:hover, #butonDeautentificare:hover
+{
+    background-color: rgba(0, 200, 240, 0.6);
+}
+
+#divModificare button, #divStergere button
+{
+    width: 85%;
+}
+#divModificare input, #divStergere input
+{
+    width: 11%;
+}
+
+.getUUID
+{
+    animation-name: fadeUUID;
+    animation-duration: 1s;
+}
+@keyframes fadeUUID
+{
+    0%   { opacity: 0%; }
+    100% { opacity: 100%; }
+}
+
+@media (max-width: 990px) {
+    .pagina {
+        margin: 15px;
+        
+        display: grid;
+        grid-template-columns: 70% 1fr;
+        grid-template-rows: 90% 1fr;
+        grid-template-areas:
+            "continut altele"
+            "footer   .";
+    }
+
+    #logo {
+        display: none;
+    }
+
+    .continut {
+        margin: 0;
+    }
+
+    .cuprins {
+        display: none;
+    }
+
+    .pagina .text {
+        display: block;
+        width: 100%;
+    }
+
+    
+    .galerie-sub {
+        width: calc(50% - 10px);
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .pagina {
+        margin: 15px;
+        
+        display: block;
+    }
+
+    .altele {
+        display: none;
+    }
+
+    .galerie-sub {
+        width: 100%;
+        object-fit: cover;
+        margin-bottom: 10px;
+    }
+}
+
+.bg-img
+{
+    width: 50%;
+}
